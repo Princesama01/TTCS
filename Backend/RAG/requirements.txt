@@ -1,0 +1,44 @@
+# Core Dependencies
+langchain==0.1.0
+langchain-community==0.0.13
+llama-cpp-python==0.2.27
+sentence-transformers==2.2.2
+
+# PDF Processing
+PyMuPDF==1.23.8
+pypdf==3.17.4
+
+# Vector Store
+faiss-cpu==1.7.4
+# faiss-gpu==1.7.4  # Uncomment for GPU support
+
+# Embeddings
+transformers==4.36.2
+torch==2.1.2
+
+# Reranking
+cross-encoder==1.2.0
+
+# Evaluation
+ragas==0.1.1
+datasets==2.16.1
+
+# API & Web Interface
+fastapi==0.109.0
+uvicorn==0.25.0
+python-multipart==0.0.6
+pydantic==2.5.3
+pydantic-settings==2.1.0
+
+# Utilities
+python-dotenv==1.0.0
+tqdm==4.66.1
+numpy==1.24.3
+pandas==2.1.4
+
+# Monitoring & Logging
+loguru==0.7.2
+prometheus-client==0.19.0
+
+# Optional: TensorRT-LLM (requires separate installation)
+# tensorrt-llm==0.7.1

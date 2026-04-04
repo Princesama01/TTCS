@@ -1,0 +1,22 @@
+[
+    {
+        "question": "Quy trình onboarding nhân viên mới như thế nào?",
+        "ground_truth": "Quy trình onboarding bao gồm: đăng ký thông tin cá nhân, training về quy định công ty, setup tài khoản và email, orientation với team, và nhận được mentor hỗ trợ trong 30 ngày đầu."
+    },
+    {
+        "question": "Chính sách nghỉ phép của công ty?",
+        "ground_truth": "Nhân viên chính thức được hưởng 12 ngày phép năm có lương, cộng thêm các ngày lễ theo quy định của nhà nước. Nhân viên thử việc được hưởng phép theo tỷ lệ thời gian làm việc."
+    },
+    {
+        "question": "Làm thế nào để đăng ký khóa đào tạo nội bộ?",
+        "ground_truth": "Đăng nhập vào portal nội bộ, vào mục Training & Development, chọn khóa học phù hợp, điền form đăng ký và gửi cho manager phê duyệt."
+    },
+    {
+        "question": "Quy định về làm việc từ xa?",
+        "ground_truth": "Nhân viên có thể làm việc từ xa 2 ngày/tuần sau khi hết thời gian thử việc, cần đăng ký trước với manager ít nhất 1 ngày, đảm bảo kết nối internet ổn định và hoàn thành công việc đúng hạn."
+    },
+    {
+        "question": "Thời gian làm việc tiêu chuẩn?",
+        "ground_truth": "8:30 AM - 5:30 PM từ thứ 2 đến thứ 6, nghỉ trưa 1 giờ. Nhân viên có thể flexible giờ làm trong khung 8:00 AM - 6:00 PM với sự đồng ý của manager."
+    }
+]
