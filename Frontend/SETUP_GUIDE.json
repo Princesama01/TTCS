@@ -1,0 +1,53 @@
+{
+  "name": "RAG Frontend Setup Guide",
+  "description": "Hướng dẫn cài đặt và chạy Frontend React cho hệ thống RAG Document Q&A",
+  "guides": [
+    {
+      "title": "1️⃣ Cài đặt Node.js",
+      "steps": [
+        "Tải Node.js từ https://nodejs.org/ (khuyên dùng LTS)",
+        "Cài đặt Node.js + npm",
+        "Kiểm tra: mở Terminal/PowerShell gõ `node --version` và `npm --version`"
+      ]
+    },
+    {
+      "title": "2️⃣ Cài đặt Dependencies",
+      "steps": [
+        "Mở Terminal trong thư mục Frontend",
+        "Gõ lệnh: npm install",
+        "Chờ cho đến khi hoàn thành"
+      ]
+    },
+    {
+      "title": "3️⃣ Cấu hình Environment",
+      "steps": [
+        "Tạo hoặc sửa file .env.local",
+        "Thêm: REACT_APP_API_URL=http://localhost:8000/api/v1",
+        "Lưu file"
+      ]
+    },
+    {
+      "title": "4️⃣ Chạy Development Server",
+      "steps": [
+        "Trong Terminal gõ: npm start",
+        "Trình duyệt sẽ mở tự động tại http://localhost:3000",
+        "Nếu không, tự mở http://localhost:3000"
+      ]
+    },
+    {
+      "title": "5️⃣ Sử dụng Ứng dụng",
+      "features": [
+        "💬 Dùng tab Chat để hỏi về tài liệu",
+        "📤 Dùng tab Upload để tải tài liệu mới",
+        "📋 Dùng tab Quản Lý để xem tài liệu đã upload",
+        "⚙️ Chỉnh cài đặt ngôn ngữ ở sidebar"
+      ]
+    }
+  ],
+  "troubleshooting": {
+    "npm_not_found": "Đảm bảo Node.js được cài đặt đúng",
+    "port_3000_in_use": "Chạy lệnh: lsof -i :3000 và kill -9 <PID>",
+    "api_not_connecting": "Kiểm tra backend đang chạy ở port 8000",
+    "cors_error": "Bật CORS trong config.py backend"
+  }
+}
