@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>So Sánh Văn Bản Song Song</title>
+    <style>
+        :root {
+            --added-bg: #d4edda; --added-text: #155724; 
+            --removed-bg: #f8d7da; --removed-text: #721c24; 
+            --modified-bg: #fff3cd; --modified-text: #856404; 
+        }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; display: flex; height: 100vh; margin: 0; background: #eee; }
+        
+        /* Menu Điều khoản */
+        .sidebar { width: 250px; background: #2c3e50; color: white; padding: 20px; overflow-y: auto; }
+        .clause-item { padding: 12px; margin-bottom: 8px; background: #34495e; border-radius: 4px; cursor: pointer; transition: 0.3s; }
+        .clause-item:hover { background: #1abc9c; }
+
+        /* Vùng hiển thị nội dung */
+        .main-content { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+        .headers { display: grid; grid-template-columns: 1fr 1fr; background: white; border-bottom: 2px solid #ddd; padding: 15px; font-weight: bold; text-align: center; }
+        
+        .view-container { display: grid; grid-template-columns: 1fr 1fr; flex: 1; overflow: hidden; background: white; }
+        .doc-pane { padding: 30px; overflow-y: scroll; line-height: 1.8; border-right: 1px solid #eee; scroll-behavior: smooth; }
+
+        /* Các lớp Highlight */
+        .diff-added { background-color: var(--added-bg); color: var(--added-text); padding: 2px 4px; border-radius: 2px; }
+        .diff-removed { background-color: var(--removed-bg); color: var(--removed-text); text-decoration: line-through; padding: 2px 4px; border-radius: 2px; }
+        .diff-modified { background-color: var(--modified-bg); color: var(--modified-text); padding: 2px 4px; border-radius: 2px; }
+        
+        h4 { color: #2c3e50; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+    </style>
+</head>
+<body>
+
+<div class="sidebar" id="sidebar">
+    <h3>Mục lục Điều khoản</h3>
+    </div>
+
+<div class="main-content">
+    <div class="headers">
+        <div>VĂN BẢN A (GỐC)</div>
+        <div>VĂN BẢN B (THAY THẾ)</div>
+    </div>
+    <div class="view-container">
+        <div id="paneA" class="doc-pane" onscroll="syncScroll('paneA', 'paneB')"></div>
+        <div id="paneB" class="doc-pane" onscroll="syncScroll('paneB', 'paneA')"></div>
+    </div>
+</div>
+
+<script>
+    // Dữ liệu mô phỏng từ Backend 
+    const data = [
+        {
+            id: "dieu-1",
+            title: "Điều 1: Phạm vi",
+            content_a: "Luật này quy định về việc quản lý <span class='diff-removed'>môi trường đô thị</span>.",
+            content_b: "Luật này quy định về việc quản lý <span class='diff-modified'>tài nguyên thiên nhiên và rác thải</span>."
+        },
+        {
+            id: "dieu-2",
+            title: "Điều 2: Đối tượng",
+            content_a: "Áp dụng cho mọi tổ chức trong nước.",
+            content_b: "Áp dụng cho mọi tổ chức trong nước <span class='diff-added'>và văn phòng đại diện nước ngoài</span>."
+        },
+        {
+            id: "dieu-5",
+            title: "Điều 5: Hình thức xử lý",
+            content_a: "Phạt tiền từ 5 đến 10 triệu đồng.",
+            content_b: "Phạt tiền từ <span class='diff-modified'>10 đến 20 triệu đồng</span> hoặc đình chỉ hoạt động."
+        }
+    ];
+
+    function render() {
+        const sidebar = document.getElementById('sidebar');
+        const paneA = document.getElementById('paneA');
+        const paneB = document.getElementById('paneB');
+
+        data.forEach(item => {
+            // Render Sidebar
+            const div = document.createElement('div');
+            div.className = 'clause-item';
+            div.innerText = item.title;
+            div.onclick = () => scrollToClause(item.id);
+            sidebar.appendChild(div);
+
+            // Render Nội dung A
+            paneA.innerHTML += `<div id="A-${item.id}"><h4>${item.title}</h4><p>${item.content_a}</p></div><br>`;
+            // Render Nội dung B
+            paneB.innerHTML += `<div id="B-${item.id}"><h4>${item.title}</h4><p>${item.content_b}</p></div><br>`;
+        });
+    }
+
+    // Đồng bộ cuộn (Sync Scroll)
+    function syncScroll(fromId, toId) {
+        const fromEl = document.getElementById(fromId);
+        const toEl = document.getElementById(toId);
+        const ratio = fromEl.scrollTop / (fromEl.scrollHeight - fromEl.clientHeight);
+        toEl.scrollTop = ratio * (toEl.scrollHeight - toEl.clientHeight);
+    }
+
+    // Điều hướng (Click Điều 5 -> Scroll)
+    function scrollToClause(id) {
+        document.getElementById(`A-${id}`).scrollIntoView({ behavior: 'smooth' });
+        document.getElementById(`B-${id}`).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    render();
+</script>
+</body>
+</html>
