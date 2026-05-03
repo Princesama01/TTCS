@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend - Stats</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<header class="topbar">
+    <div class="topbar-inner">
+        <div class="brand">TTCS Frontend</div>
+        <nav class="nav">
+            <a href="index.html">Dashboard</a>
+            <a href="upload.html">Upload</a>
+            <a href="documents.html">Documents</a>
+            <a href="search.html">Search</a>
+            <a href="compare.html">Compare</a>
+            <a href="chat.html">Chat</a>
+            <a href="stats.html">Stats</a>
+            <a href="evaluation.html">Evaluation</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section class="card">
+        <h2>System stats</h2>
+        <div class="grid grid-3">
+            <div><div class="muted">Documents</div><div id="sDocs" style="font-size:26px;font-weight:700;">-</div></div>
+            <div><div class="muted">Chunks</div><div id="sChunks" style="font-size:26px;font-weight:700;">-</div></div>
+            <div><div class="muted">Status</div><div id="sStatus" style="font-size:26px;font-weight:700;">-</div></div>
+        </div>
+        <p class="muted">Updated: <span id="sUpdated">-</span></p>
+    </section>
+
+    <section class="card" style="margin-top:16px;">
+        <h3>Endpoint checks</h3>
+        <div id="endpointChecks" class="list"></div>
+    </section>
+</main>
+
+<script src="scripts/common.js"></script>
+<script src="scripts/stats.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+{
+  "case_id": "data2",
+  "schema_version": "1.0",
+  "task": "legal_change_detection",
+  "labels": {
+    "removed": [
+      {
+        "id": "R1",
+        "text": "(c) Kiểm soát nội bộ mà Ban Giám đốc xác định là cần thiết để đảm bảo cho việc lập và trình bày báo cáo quyết toán dự án hoàn thành không còn sai sót trọng yếu do gian lận hoặc nhầm lẫn;"
+      },
+      {
+        "id": "R2",
+        "text": "Kiểm tra hồ sơ pháp lý;"
+      }
+    ],
+    "added": [
+      {
+        "id": "A1",
+        "text": "Các cách kiểm tra;"
+      },
+      {
+        "id": "A2",
+        "text": "Trách nhiệm của cả 2 bên:"
+      }
+    ],
+    "changed": [
+      {
+        "id": "C1",
+        "before": "Thanh toán đầy đủ và đúng thời hạn phí kiểm toán và các phí khác (nếu có) cho Bên B theo quy định tại Điều 5 của hợp đồng này.",
+        "after": "Thanh toán không đầy đủ và không cần đúng thời hạn phí kiểm toán và các phí khác (nếu có) cho Bên B theo quy định tại Điều 5 của hợp đồng này."
+      },
+      {
+        "id": "C2",
+        "before": "Đề nghị Bên A cung cấp các thông tin, tài liệu liên quan đến nội dung công việc kiểm toán;",
+        "after": "Đề nghị Bên B cung cấp các thông tin, tài liệu liên quan đến nội dung công việc kiểm toán;"
+      }
+    ]
+  },
+  "stats": {
+    "removed_count": 2,
+    "added_count": 2,
+    "changed_count": 2
+  }
+}

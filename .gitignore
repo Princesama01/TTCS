@@ -1,0 +1,97 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+\.venv/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Environment variables
+.env
+.env.*
+
+# Byte-compiled / optimized
+*.pyc
+
+# Data and storage (adjust if you want to include data)
+data/qdrant_storage/
+data/uploads/
+# Dependencies
+node_modules/
+*.egg-info/
+__pycache__/
+.venv/
+venv/
+*.pyo
+*.pyd
+
+# Build outputs
+dist/
+build/
+*.pyc
+*.o
+*.so
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# Data & Cache (ignore large storage)
+Backend/data/uploads/
+Backend/data/qdrant_storage/
+Backend/data/documents/doc_*/
+*.qdrant
+*.db
+
+# Pycache in Backend
+Backend/__pycache__/
+Backend/api/__pycache__/
+Backend/api/**/__pycache__/
+Backend/src/__pycache__/
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+*.bak
+
+# VS Code specific
+.vscode/settings.json
+.vscode/launch.json

@@ -1,0 +1,40 @@
+{
+  "case_id": "data5",
+  "schema_version": "1.0",
+  "task": "legal_change_detection",
+  "labels": {
+    "removed": [
+      {
+        "id": "R1",
+        "text": "(Sau đây gọi là “Công Ty”)"
+      },
+      {
+        "id": "R2",
+        "text": "Số: ………/2023/………………………"
+      }
+    ],
+    "added": [
+      {
+        "id": "A1",
+        "text": "5. Mục tiêu nhà cửa:"
+      }
+    ],
+    "changed": [
+      {
+        "id": "C1",
+        "before": "4. Công Ty được giúp đỡ các chi phí phát sinh khi thực hiện các công việc theo Điều này.",
+        "after": "4. Công Ty chịu các chi phí phát sinh khi thực hiện các công việc theo Điều này."
+      },
+      {
+        "id": "C2",
+        "before": "1. Chuẩn bị và sẵn sàng cung cấp Sản Phẩm cho Nhà Phân Phối đúng chất lượng, nhãn hiệu, đảm bảo đầy đủ các điều kiện xuất bán theo quy định pháp luật. Công Ty cam kết sẽ luôn có khả năng cung cấp cho Nhà Phân Phối được số lượng Sản Phẩm có giá trị ít nhất 05 tỷ đồng/tháng",
+        "after": "1. Không cần chuẩn bị và sẵn sàng cung cấp Sản Phẩm cho Nhà Phân Phối đúng chất lượng, nhãn hiệu, đảm bảo đầy đủ các điều kiện xuất bán theo quy định pháp luật. Công Ty cam kết sẽ luôn có khả năng cung cấp cho Nhà Phân Phối được số lượng Sản Phẩm có giá trị ít nhất 05 tỷ đồng/tháng"
+      }
+    ]
+  },
+  "stats": {
+    "removed_count": 2,
+    "added_count": 1,
+    "changed_count": 2
+  }
+}

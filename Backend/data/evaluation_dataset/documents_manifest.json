@@ -1,0 +1,64 @@
+{
+  "dataset_id": "rag_eval_vi_legal_v1",
+  "description": "Bo du lieu danh gia RAG tieng Viet cho so sanh van ban phap ly/hop dong theo cap v1-v2.",
+  "encoding": "UTF-8",
+  "normalization": {
+    "source_format_to_text": [
+      "DOCX -> text",
+      "PDF -> text"
+    ],
+    "cleanup_rules": [
+      "Loai bo khoang trang thua",
+      "Chuan hoa dong tieu de Dieu/Khoan",
+      "Giữ nguyen noi dung nghiep vu, khong rut gon y nghia"
+    ]
+  },
+  "documents": [
+    {
+      "pair_id": "contract_service",
+      "source_type": "hop_dong_mau",
+      "v1_file": "documents/contract_service_v1.txt",
+      "v2_file": "documents/contract_service_v2.txt",
+      "version_labels": [
+        "v1",
+        "v2"
+      ],
+      "change_profile": [
+        "sua_so_lieu",
+        "them_khoan",
+        "them_dieu",
+        "cap_nhat_tham_chieu_cheo"
+      ]
+    },
+    {
+      "pair_id": "annex_sla",
+      "source_type": "phu_luc",
+      "v1_file": "documents/annex_sla_v1.txt",
+      "v2_file": "documents/annex_sla_v2.txt",
+      "version_labels": [
+        "v1",
+        "v2"
+      ],
+      "change_profile": [
+        "sua_chi_tieu_sla",
+        "them_khoan_ky_thuat",
+        "cap_nhat_tham_chieu"
+      ]
+    },
+    {
+      "pair_id": "legal_guideline",
+      "source_type": "van_ban_phap_ly",
+      "v1_file": "documents/legal_guideline_v1.txt",
+      "v2_file": "documents/legal_guideline_v2.txt",
+      "version_labels": [
+        "v1",
+        "v2"
+      ],
+      "change_profile": [
+        "sua_thoi_han",
+        "them_khoan_nghia_vu",
+        "them_dieu_moi"
+      ]
+    }
+  ]
+}

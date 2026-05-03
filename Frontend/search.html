@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend - Search</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<header class="topbar">
+    <div class="topbar-inner">
+        <div class="brand">TTCS Frontend</div>
+        <nav class="nav">
+            <a href="index.html">Dashboard</a>
+            <a href="upload.html">Upload</a>
+            <a href="documents.html">Documents</a>
+            <a href="search.html">Search</a>
+            <a href="compare.html">Compare</a>
+            <a href="chat.html">Chat</a>
+            <a href="stats.html">Stats</a>
+            <a href="evaluation.html">Evaluation</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section class="card">
+        <h2>Semantic Search</h2>
+        <div class="grid grid-3">
+            <input id="queryInput" type="text" placeholder="Nhập truy vấn...">
+            <select id="vectorName">
+                <option value="micro">micro</option>
+                <option value="macro">macro</option>
+                <option value="xref">xref</option>
+            </select>
+            <input id="topK" type="number" min="1" max="100" value="5">
+        </div>
+        <div class="row-wrap" style="margin-top:10px;">
+            <input id="version" type="text" placeholder="version (vd: v1, optional)">
+            <button id="searchBtn" class="btn btn-primary">Search</button>
+        </div>
+    </section>
+
+    <section class="card" style="margin-top:16px;">
+        <h3>Kết quả</h3>
+        <div id="results" class="list"></div>
+    </section>
+</main>
+
+<script src="scripts/common.js"></script>
+<script src="scripts/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+{
+  "case_id": "data4",
+  "schema_version": "1.0",
+  "task": "legal_change_detection",
+  "labels": {
+    "removed": [
+      {
+        "id": "R1",
+        "text": "Phụ lục I. CÁC THÔNG SỐ CHÍNH CỦA NHÀ MÁY ĐIỆN..................................."
+      },
+      {
+        "id": "R2",
+        "text": "Điều 1. Định nghĩa"
+      }
+    ],
+    "added": [
+      {
+        "id": "A1",
+        "text": "Chứng Minh Thư:"
+      },
+      {
+        "id": "A2",
+        "text": "Căn cứ Luật."
+      }
+    ],
+    "changed": [
+      {
+        "id": "C1",
+        "before": "3. Chu kỳ giao dịch là chu kỳ tính toán giá điện năng trên thị trường điện, trong khoảng thời gian 01 giờ tính từ phút đầu tiên mỗi giờ.",
+        "after": "3. Chu kỳ giao dịch là chu kỳ tính toán giá điện năng trên thị trường điện, trong khoảng thời gian 02 giờ tính từ phút đầu tiên mỗi giờ."
+      },
+      {
+        "id": "C2",
+        "before": "13. Ngày là ngày dương lịch.",
+        "after": "13. Ngày là ngày âm lịch."
+      }
+    ]
+  },
+  "stats": {
+    "removed_count": 2,
+    "added_count": 2,
+    "changed_count": 2
+  }
+}

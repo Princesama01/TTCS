@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend - Documents</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<header class="topbar">
+    <div class="topbar-inner">
+        <div class="brand">TTCS Frontend</div>
+        <nav class="nav">
+            <a href="index.html">Dashboard</a>
+            <a href="upload.html">Upload</a>
+            <a href="documents.html">Documents</a>
+            <a href="search.html">Search</a>
+            <a href="compare.html">Compare</a>
+            <a href="chat.html">Chat</a>
+            <a href="stats.html">Stats</a>
+            <a href="evaluation.html">Evaluation</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section class="card">
+        <div class="row-wrap">
+            <input id="searchInput" type="text" placeholder="Tìm theo tên hoặc id...">
+            <button id="reloadBtn" class="btn">Reload</button>
+        </div>
+    </section>
+
+    <section class="card" style="margin-top:16px;">
+        <h2>Documents</h2>
+        <div id="documentsList" class="list"></div>
+    </section>
+
+    <section class="card" style="margin-top:16px;">
+        <h3>Clauses Preview</h3>
+        <div id="clausesList" class="list"></div>
+    </section>
+
+    <section class="card" style="margin-top:16px;">
+        <h3>Original File</h3>
+        <a id="originalFileOpenLink" class="btn" href="#" target="_blank" rel="noopener" style="display:inline-block; margin-bottom:12px;">
+            Chưa chọn tài liệu
+        </a>
+        <iframe
+            id="originalFileFrame"
+            title="Original document file"
+            style="width:100%; min-height:520px; border:1px solid var(--border); border-radius:10px; background:var(--bg-soft);"
+        ></iframe>
+        <div id="originalFileDocxView" class="file-render-docx hidden"></div>
+    </section>
+</main>
+
+<script src="scripts/common.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mammoth@1.8.0/mammoth.browser.min.js"></script>
+<script src="scripts/documents.js"></script>
+</body>
+</html>

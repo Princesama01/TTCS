@@ -1,0 +1,44 @@
+{
+  "case_id": "data3",
+  "schema_version": "1.0",
+  "task": "legal_change_detection",
+  "labels": {
+    "removed": [
+      {
+        "id": "R1",
+        "text": "Bộ luật Dân sự năm 2015;"
+      },
+      {
+        "id": "R2",
+        "text": "CÔNG TY TNHH AAA"
+      }
+    ],
+    "added": [
+      {
+        "id": "A1",
+        "text": "CMT: …"
+      },
+      {
+        "id": "A2",
+        "text": "Giấy nợ."
+      }
+    ],
+    "changed": [
+      {
+        "id": "C1",
+        "before": "Được AAA cung cấp dịch vụ theo đúng thời hạn đã thoả thuận trong hợp đồng.",
+        "after": "Được AAA cung cấp dịch vụ theo không đúng thời hạn đã thoả thuận trong hợp đồng."
+      },
+      {
+        "id": "C2",
+        "before": "Giá trên chưa bao gồm thuế giá trị gia tăng, phí thuê tên miền, hosting (nơi lưu trữ phần mềm website trên internet).",
+        "after": "Giá trên đã bao gồm thuế giá trị gia tăng, phí thuê tên miền, hosting (nơi lưu trữ phần mềm website trên internet)."
+      }
+    ]
+  },
+  "stats": {
+    "removed_count": 2,
+    "added_count": 2,
+    "changed_count": 2
+  }
+}

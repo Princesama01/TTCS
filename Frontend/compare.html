@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend - Compare</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/compare.css">
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">TTCS Frontend</div>
+            <nav class="nav">
+                <a href="index.html">Dashboard</a>
+                <a href="upload.html">Upload</a>
+                <a href="documents.html">Documents</a>
+                <a href="search.html">Search</a>
+                <a href="compare.html" class="active">Compare</a>
+                <a href="chat.html">Chat</a>
+                <a href="stats.html">Stats</a>
+                <a href="evaluation.html">Evaluation</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="compare-wrapper">
+        <!-- Control Panel -->
+        <section class="compare-control-panel card">
+            <h2>Compare 2 Documents</h2>
+            <div class="grid grid-3">
+                <div>
+                    <label>Document 1</label>
+                    <select id="doc1"></select>
+                </div>
+                <div>
+                    <label>Document 2</label>
+                    <select id="doc2"></select>
+                </div>
+                <div>
+                    <label>Mode</label>
+                    <select id="mode">
+                        <option value="hybrid">hybrid</option>
+                        <option value="semantic">semantic</option>
+                        <option value="llm">llm</option>
+                        <option value="difflib_llm">difflib_llm</option>
+                    </select>
+                </div>
+            </div>
+            <div class="grid grid-4" style="margin-top:12px;">
+                <div>
+                    <label>semantic_threshold</label>
+                    <input id="semanticThreshold" type="number" min="0.5" max="0.99" step="0.01" value="0.88">
+                </div>
+                <div>
+                    <label>candidate_threshold</label>
+                    <input id="candidateThreshold" type="number" min="0.3" max="0.95" step="0.01" value="0.60">
+                </div>
+                <div>
+                    <label>llm_confidence_threshold</label>
+                    <input id="llmConfidenceThreshold" type="number" min="0" max="1" step="0.01" value="0.70">
+                </div>
+                <div>
+                    <label>max_segments</label>
+                    <input id="maxSegments" type="number" min="1" max="300" value="120">
+                </div>
+            </div>
+            <div class="row-wrap" style="margin-top:10px;">
+                <button id="compareBtn" class="btn btn-primary">Compare</button>
+                <label class="row" style="margin:0;">
+                    <input id="changedOnly" type="checkbox" checked style="width:auto;">
+                    <span>Only changed items</span>
+                </label>
+            </div>
+        </section>
+
+        <!-- Compare View (3-Column Layout) -->
+        <div id="compareViewWrap" class="compare-view-container hidden">
+            <!-- Left Panel: Document 1 -->
+            <div class="compare-panel">
+                <div class="compare-panel-header">
+                    <h3>VB1 — VĂN BẢN CŨ</h3>
+                </div>
+                <div class="compare-panel-content doc-panel-content">
+                    <a id="doc1FileOpen" class="btn doc-open-link" href="#" target="_blank" rel="noopener">Mở VB1 ở tab mới</a>
+                    <iframe id="doc1FileFrame" class="doc-file-frame" title="VB1 original file"></iframe>
+                    <div id="doc1DocxView" class="docx-render hidden"></div>
+                </div>
+            </div>
+
+            <!-- Middle Panel: Document 2 -->
+            <div class="compare-panel">
+                <div class="compare-panel-header">
+                    <h3>VB2 — VĂN BẢN MỚI</h3>
+                </div>
+                <div class="compare-panel-content doc-panel-content">
+                    <a id="doc2FileOpen" class="btn doc-open-link" href="#" target="_blank" rel="noopener">Mở VB2 ở tab mới</a>
+                    <iframe id="doc2FileFrame" class="doc-file-frame" title="VB2 original file"></iframe>
+                    <div id="doc2DocxView" class="docx-render hidden"></div>
+                </div>
+            </div>
+
+            <!-- Right Panel: Results + Detail -->
+            <div class="compare-results-wrapper">
+                <!-- Results Panel -->
+                <div class="compare-panel compare-results-panel">
+                    <div class="compare-panel-header">
+                        <h3>KẾT QUẢ SO SÁNH</h3>
+                    </div>
+                    <div class="compare-panel-content compare-results-content">
+                        <div class="results-summary">
+                            <div class="summary-stats" id="summaryStats">
+                                Chưa có dữ liệu so sánh
+                            </div>
+                            <div class="summary-tags" id="summaryTags"></div>
+                        </div>
+                        <div class="results-tabs">
+                            <button class="tab-btn active" data-tab="changes">Sửa đổi <span class="tab-count">4</span></button>
+                            <button class="tab-btn" data-tab="added">Thêm mới <span class="tab-count">1</span></button>
+                            <button class="tab-btn" data-tab="removed">Xóa bỏ <span class="tab-count">1</span></button>
+                        </div>
+                        <div class="results-list" id="resultsList"></div>
+                    </div>
+                </div>
+
+                <!-- Detail Panel (Integrated below Results) -->
+                <div id="resultDetail" class="compare-panel result-detail hidden">
+                    <div class="compare-panel-header">
+                        <h3 id="resultDetailTitle">Chi tiết so sánh</h3>
+                    </div>
+                    <div id="resultDetailBody" class="compare-panel-content result-detail-content mono"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts/common.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mammoth@1.8.0/mammoth.browser.min.js"></script>
+    <script src="scripts/compare.js"></script>
+</body>
+
+</html>

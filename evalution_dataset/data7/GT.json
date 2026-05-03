@@ -1,0 +1,29 @@
+{
+  "case_id": "data7",
+  "schema_version": "1.0",
+  "task": "legal_change_detection",
+  "labels": {
+    "removed": [
+      {
+        "id": "R1",
+        "text": "1.1. Bên B đồng ý giao cho Bên A thực hiện dịch vụ môi giới bán/mua bất động sản do Bên B là chủ sở hữu."
+      },
+      {
+        "id": "R2",
+        "text": "Số tiền bằng chữ: …………………………đồng."
+      }
+    ],
+    "added": [
+      {
+        "id": "A1",
+        "text": "Hai bên bắt buộc phải trả tiền môi giới."
+      }
+    ],
+    "changed": []
+  },
+  "stats": {
+    "removed_count": 2,
+    "added_count": 1,
+    "changed_count": 0
+  }
+}

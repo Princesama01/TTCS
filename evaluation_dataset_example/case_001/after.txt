@@ -1,0 +1,11 @@
+Title: Login Validation
+Description:
+Validation now checks both username and password quality.
+
+Updated Rules:
+1) username must not be empty
+2) password must be at least 8 characters
+3) password must contain at least one number
+
+Expected result:
+Weak passwords are rejected with a clear message.

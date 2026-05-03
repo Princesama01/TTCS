@@ -1,0 +1,15 @@
+PHỤ LỤC 01 - THỎA THUẬN MỨC DỊCH VỤ (SLA)
+
+Điều 1. Chỉ số vận hành
+Khoản 1. Tỷ lệ sẵn sàng hệ thống tối thiểu là 99,5% mỗi tháng.
+Khoản 2. Thời gian phản hồi sự cố mức nghiêm trọng cao là không quá 02 giờ.
+Khoản 3. Thời gian khắc phục sự cố mức nghiêm trọng cao là không quá 12 giờ.
+Khoản 4. Hệ thống sao lưu phải đảm bảo điểm khôi phục dữ liệu (RPO) không vượt quá 30 phút.
+
+Điều 2. Báo cáo và nghiệm thu
+Khoản 1. Bên B gửi báo cáo SLA định kỳ vào ngày 03 hằng tháng.
+Khoản 2. Bên A có quyền yêu cầu đối soát số liệu trong vòng 05 ngày làm việc.
+
+Điều 3. Cơ chế phạt SLA
+Khoản 1. Nếu tỷ lệ sẵn sàng dưới 99,5%, Bên B giảm trừ 5% phí dịch vụ tháng.
+Khoản 2. Việc giảm trừ được cấn trừ vào kỳ thanh toán kế tiếp theo Điều 2 Khoản 2 của phụ lục này.

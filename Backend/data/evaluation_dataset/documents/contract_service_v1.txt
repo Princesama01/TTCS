@@ -1,0 +1,23 @@
+HỢP ĐỒNG DỊCH VỤ PHÁT TRIỂN PHẦN MỀM
+Số: 12/2025/HĐDV
+
+Điều 1. Phạm vi công việc
+Khoản 1. Bên B phát triển hệ thống quản lý hợp đồng theo tài liệu yêu cầu đã được hai bên phê duyệt.
+Khoản 2. Bên B cung cấp mã nguồn, tài liệu hướng dẫn sử dụng và tài liệu triển khai.
+
+Điều 2. Giá trị hợp đồng và thanh toán
+Khoản 1. Giá trị hợp đồng là 2.000.000.000 đồng (đã bao gồm thuế VAT).
+Khoản 2. Bên A thanh toán trong vòng 30 ngày kể từ ngày nhận đủ hồ sơ nghiệm thu hợp lệ.
+Khoản 3. Việc thanh toán được thực hiện bằng chuyển khoản vào tài khoản do Bên B chỉ định.
+
+Điều 3. Bảo mật thông tin
+Khoản 1. Các bên cam kết bảo mật toàn bộ dữ liệu khách hàng, mã nguồn và tài liệu kỹ thuật.
+Khoản 2. Thời hạn bảo mật là 24 tháng kể từ ngày thanh lý hợp đồng.
+
+Điều 4. Phạt vi phạm và bồi thường
+Khoản 1. Bên vi phạm nghĩa vụ tiến độ chịu phạt 8% giá trị phần nghĩa vụ bị vi phạm.
+Khoản 2. Mức bồi thường thiệt hại thực tế được xác định theo quy định tại Điều 5 Khoản 1 của hợp đồng này.
+
+Điều 5. Chấm dứt hợp đồng
+Khoản 1. Hợp đồng chấm dứt khi các bên hoàn thành nghĩa vụ hoặc theo thỏa thuận bằng văn bản.
+Khoản 2. Một bên có quyền đơn phương chấm dứt nếu bên còn lại vi phạm nghiêm trọng nghĩa vụ và không khắc phục trong 15 ngày.

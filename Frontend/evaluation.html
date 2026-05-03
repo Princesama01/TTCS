@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend - Evaluation</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<header class="topbar">
+    <div class="topbar-inner">
+        <div class="brand">TTCS Frontend</div>
+        <nav class="nav">
+            <a href="index.html">Dashboard</a>
+            <a href="upload.html">Upload</a>
+            <a href="documents.html">Documents</a>
+            <a href="search.html">Search</a>
+            <a href="compare.html">Compare</a>
+            <a href="chat.html">Chat</a>
+            <a href="stats.html">Stats</a>
+            <a href="evaluation.html">Evaluation</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section class="card">
+        <div class="row" style="justify-content: space-between;">
+            <h2>RAG vs Baseline Evaluation</h2>
+            <button id="runEvalBtn" class="btn btn-primary">Run Evaluation</button>
+        </div>
+        <p class="muted">Timestamp: <span id="evalTimestamp">-</span></p>
+    </section>
+
+    <section class="card" style="margin-top:16px;">
+        <h3>Baseline - Comparison Metrics</h3>
+        <div id="baselineMetrics" class="list"></div>
+    </section>
+
+    <section class="card" style="margin-top:16px;">
+        <h3>RAG - Comparison Metrics</h3>
+        <div id="ragMetrics" class="list"></div>
+    </section>
+</main>
+
+<script src="scripts/common.js"></script>
+<script src="scripts/evaluation.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "case_id": "data8",
+  "schema_version": "1.0",
+  "task": "legal_change_detection",
+  "labels": {
+    "removed": [
+      {
+        "id": "R1",
+        "text": "Căn cứ Bộ luật Dân sự số 91/2015/QH13, ngày 14 tháng 11 năm 2015"
+      },
+      {
+        "id": "R2",
+        "text": "Số tài khoản: ....................................... tại Ngân hàng ...................................................."
+      }
+    ],
+    "added": [],
+    "changed": [
+      {
+        "id": "C1",
+        "before": "- Ngay sau khi hai bên ký kết hợp đồng này, Bên B sẽ đặt cọc một khoản tiền tương ứng là ………….% giá trị của Hợp đồng.",
+        "after": "- Trước khi hai bên ký kết hợp đồng này, Bên B sẽ đặt cọc một khoản tiền tương ứng là ………….% giá trị của Hợp đồng."
+      },
+      {
+        "id": "C2",
+        "before": "a) Thanh toán đầy đủ, đúng hạn cho Bên A tổng giá trị chuyển nhượng cổ phần theo quy định tại Điều 1 của Hợp đồng này.",
+        "after": "a) Không cần thanh toán đầy đủ, đúng hạn cho Bên A tổng giá trị chuyển nhượng cổ phần theo quy định tại Điều 1 của Hợp đồng này."
+      }
+    ]
+  },
+  "stats": {
+    "removed_count": 2,
+    "added_count": 0,
+    "changed_count": 2
+  }
+}

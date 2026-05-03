@@ -1,0 +1,209 @@
+{
+  "dataset_id": "rag_eval_vi_legal_v1",
+  "label_schema": {
+    "required_fields": [
+      "pair_id",
+      "location",
+      "type",
+      "old",
+      "new",
+      "category"
+    ],
+    "type_values": [
+      "modified",
+      "added",
+      "removed"
+    ],
+    "category_values": [
+      "micro",
+      "macro",
+      "xref"
+    ]
+  },
+  "changes": [
+    {
+      "pair_id": "contract_service",
+      "location": "Dieu 2 - Khoan 1",
+      "type": "modified",
+      "old": "2.000.000.000 dong",
+      "new": "2.150.000.000 dong",
+      "category": "micro"
+    },
+    {
+      "pair_id": "contract_service",
+      "location": "Dieu 2 - Khoan 2",
+      "type": "modified",
+      "old": "30 ngay",
+      "new": "45 ngay",
+      "category": "micro"
+    },
+    {
+      "pair_id": "contract_service",
+      "location": "Dieu 2 - Khoan 4",
+      "type": "added",
+      "old": "",
+      "new": "Tam ung 20% gia tri hop dong trong 07 ngay.",
+      "category": "macro"
+    },
+    {
+      "pair_id": "contract_service",
+      "location": "Dieu 3 - Khoan 1",
+      "type": "modified",
+      "old": "Bao mat du lieu khach hang, ma nguon va tai lieu ky thuat.",
+      "new": "Bao mat du lieu khach hang va tai lieu ky thuat.",
+      "category": "micro"
+    },
+    {
+      "pair_id": "contract_service",
+      "location": "Dieu 3 - Khoan 2",
+      "type": "modified",
+      "old": "24 thang",
+      "new": "36 thang",
+      "category": "micro"
+    },
+    {
+      "pair_id": "contract_service",
+      "location": "Dieu 4 - Khoan 1",
+      "type": "modified",
+      "old": "Phat 8%",
+      "new": "Phat 10%",
+      "category": "micro"
+    },
+    {
+      "pair_id": "contract_service",
+      "location": "Dieu 4 - Khoan 2",
+      "type": "modified",
+      "old": "tham chieu Dieu 5 Khoan 1",
+      "new": "tham chieu Dieu 6 Khoan 1",
+      "category": "xref"
+    },
+    {
+      "pair_id": "contract_service",
+      "location": "Dieu 5 - Khoan 2",
+      "type": "modified",
+      "old": "khac phuc trong 15 ngay",
+      "new": "khac phuc trong 10 ngay",
+      "category": "micro"
+    },
+    {
+      "pair_id": "contract_service",
+      "location": "Dieu 6",
+      "type": "added",
+      "old": "",
+      "new": "Them dieu khoan bat kha khang gom 2 khoan.",
+      "category": "macro"
+    },
+    {
+      "pair_id": "annex_sla",
+      "location": "Dieu 1 - Khoan 1",
+      "type": "modified",
+      "old": "99,0%",
+      "new": "99,5%",
+      "category": "micro"
+    },
+    {
+      "pair_id": "annex_sla",
+      "location": "Dieu 1 - Khoan 2",
+      "type": "modified",
+      "old": "04 gio",
+      "new": "02 gio",
+      "category": "micro"
+    },
+    {
+      "pair_id": "annex_sla",
+      "location": "Dieu 1 - Khoan 3",
+      "type": "modified",
+      "old": "24 gio",
+      "new": "12 gio",
+      "category": "micro"
+    },
+    {
+      "pair_id": "annex_sla",
+      "location": "Dieu 1 - Khoan 4",
+      "type": "added",
+      "old": "",
+      "new": "Them yeu cau RPO khong vuot qua 30 phut.",
+      "category": "macro"
+    },
+    {
+      "pair_id": "annex_sla",
+      "location": "Dieu 2 - Khoan 1",
+      "type": "modified",
+      "old": "gui bao cao vao ngay 05",
+      "new": "gui bao cao vao ngay 03",
+      "category": "micro"
+    },
+    {
+      "pair_id": "annex_sla",
+      "location": "Dieu 2 - Khoan 2",
+      "type": "modified",
+      "old": "doi soat trong 03 ngay lam viec",
+      "new": "doi soat trong 05 ngay lam viec",
+      "category": "micro"
+    },
+    {
+      "pair_id": "annex_sla",
+      "location": "Dieu 3 - Khoan 1",
+      "type": "modified",
+      "old": "giam tru 3%",
+      "new": "giam tru 5%",
+      "category": "micro"
+    },
+    {
+      "pair_id": "annex_sla",
+      "location": "Dieu 3 - Khoan 2",
+      "type": "modified",
+      "old": "tham chieu Dieu 2 Khoan 1",
+      "new": "tham chieu Dieu 2 Khoan 2",
+      "category": "xref"
+    },
+    {
+      "pair_id": "legal_guideline",
+      "location": "Dieu 2 - Khoan 1",
+      "type": "modified",
+      "old": "Phan quyen truy cap theo vai tro.",
+      "new": "Phan quyen theo vai tro va ghi nhan lich su thay doi quyen.",
+      "category": "micro"
+    },
+    {
+      "pair_id": "legal_guideline",
+      "location": "Dieu 2 - Khoan 2",
+      "type": "modified",
+      "old": "Luu nhat ky 12 thang",
+      "new": "Luu nhat ky 24 thang",
+      "category": "micro"
+    },
+    {
+      "pair_id": "legal_guideline",
+      "location": "Dieu 3 - Khoan 2",
+      "type": "modified",
+      "old": "Danh gia 01 lan moi nam",
+      "new": "Danh gia 02 lan moi nam",
+      "category": "micro"
+    },
+    {
+      "pair_id": "legal_guideline",
+      "location": "Dieu 3 - Khoan 3",
+      "type": "added",
+      "old": "",
+      "new": "Ket qua danh gia luu theo bieu mau tai Dieu 5 Khoan 1.",
+      "category": "xref"
+    },
+    {
+      "pair_id": "legal_guideline",
+      "location": "Dieu 4 - Khoan 1",
+      "type": "modified",
+      "old": "ra soat trong 60 ngay",
+      "new": "ra soat trong 45 ngay",
+      "category": "micro"
+    },
+    {
+      "pair_id": "legal_guideline",
+      "location": "Dieu 5",
+      "type": "added",
+      "old": "",
+      "new": "Them dieu khoan ve bieu mau va luu tru.",
+      "category": "macro"
+    }
+  ]
+}

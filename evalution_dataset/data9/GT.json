@@ -1,0 +1,29 @@
+{
+  "case_id": "data9",
+  "schema_version": "1.0",
+  "task": "legal_change_detection",
+  "labels": {
+    "removed": [
+      {
+        "id": "R1",
+        "text": "1.2. Bên A đồng ý cho thuê và Bên B đồng ý thuê Tài sản nêu trên của Bên A."
+      },
+      {
+        "id": "R2",
+        "text": "2.2. Mục đích thuê: Bên A đồng ý cho Bên B thuê Tài sản để sử dụng cho các mục đích sau: ………………………………………………………………………………………."
+      }
+    ],
+    "added": [
+      {
+        "id": "A1",
+        "text": "3.5. Bên B bắt buộc phải giao nhà."
+      }
+    ],
+    "changed": []
+  },
+  "stats": {
+    "removed_count": 2,
+    "added_count": 1,
+    "changed_count": 0
+  }
+}

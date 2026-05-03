@@ -1,0 +1,872 @@
+{
+  "timestamp": "2026-04-21 21:20:39",
+  "config": {
+    "baseline_method": "rule_based_diff",
+    "rag_mode": "difflib_semantic_llm",
+    "semantic_threshold": 0.88,
+    "candidate_threshold": 0.6,
+    "llm_confidence_threshold": 0.7,
+    "max_segments": 700,
+    "ollama_model": "qwen2.5-3B",
+    "postprocess_merge_segments": true,
+    "postprocess_added_removed_to_changed": true
+  },
+  "rag": {
+    "comparison_metrics": {
+      "removed": {
+        "precision": 0.16,
+        "recall": 0.2,
+        "f1": 0.17777777777777778,
+        "tp": 4,
+        "fp": 21,
+        "fn": 16
+      },
+      "added": {
+        "precision": 0.5833333333333334,
+        "recall": 0.4666666666666667,
+        "f1": 0.5185185185185186,
+        "tp": 7,
+        "fp": 5,
+        "fn": 8
+      },
+      "changed": {
+        "precision": 0.5333333333333333,
+        "recall": 0.5333333333333333,
+        "f1": 0.5333333333333333,
+        "tp": 8,
+        "fp": 7,
+        "fn": 7
+      },
+      "overall": {
+        "precision": 0.36538461538461536,
+        "recall": 0.38,
+        "f1": 0.37254901960784315,
+        "tp": 19,
+        "fp": 33,
+        "fn": 31
+      },
+      "num_cases": 10
+    },
+    "per_case": [
+      {
+        "case_id": "data1",
+        "metrics": {
+          "removed": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 4,
+            "fn": 2
+          },
+          "added": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "changed": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 2,
+            "fn": 2
+          }
+        },
+        "predicted_counts": {
+          "removed": 4,
+          "added": 2,
+          "changed": 2
+        },
+        "ground_truth_counts": {
+          "removed": 2,
+          "added": 2,
+          "changed": 2
+        }
+      },
+      {
+        "case_id": "data2",
+        "metrics": {
+          "removed": {
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5,
+            "tp": 1,
+            "fp": 1,
+            "fn": 1
+          },
+          "added": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "changed": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          }
+        },
+        "predicted_counts": {
+          "removed": 2,
+          "added": 2,
+          "changed": 2
+        },
+        "ground_truth_counts": {
+          "removed": 2,
+          "added": 2,
+          "changed": 2
+        }
+      },
+      {
+        "case_id": "data3",
+        "metrics": {
+          "removed": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 1,
+            "fn": 2
+          },
+          "added": {
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5,
+            "tp": 1,
+            "fp": 1,
+            "fn": 1
+          },
+          "changed": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          }
+        },
+        "predicted_counts": {
+          "removed": 1,
+          "added": 2,
+          "changed": 2
+        },
+        "ground_truth_counts": {
+          "removed": 2,
+          "added": 2,
+          "changed": 2
+        }
+      },
+      {
+        "case_id": "data4",
+        "metrics": {
+          "removed": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 1,
+            "fn": 2
+          },
+          "added": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 1,
+            "fn": 2
+          },
+          "changed": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          }
+        },
+        "predicted_counts": {
+          "removed": 1,
+          "added": 1,
+          "changed": 2
+        },
+        "ground_truth_counts": {
+          "removed": 2,
+          "added": 2,
+          "changed": 2
+        }
+      },
+      {
+        "case_id": "data5",
+        "metrics": {
+          "removed": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 1,
+            "fn": 2
+          },
+          "added": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 1,
+            "fn": 1
+          },
+          "changed": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 2,
+            "fn": 2
+          }
+        },
+        "predicted_counts": {
+          "removed": 1,
+          "added": 1,
+          "changed": 2
+        },
+        "ground_truth_counts": {
+          "removed": 2,
+          "added": 1,
+          "changed": 2
+        }
+      },
+      {
+        "case_id": "data6",
+        "metrics": {
+          "removed": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 2,
+            "fn": 2
+          },
+          "added": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 1,
+            "fn": 2
+          },
+          "changed": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 1,
+            "fn": 1
+          }
+        },
+        "predicted_counts": {
+          "removed": 2,
+          "added": 1,
+          "changed": 1
+        },
+        "ground_truth_counts": {
+          "removed": 2,
+          "added": 2,
+          "changed": 1
+        }
+      },
+      {
+        "case_id": "data7",
+        "metrics": {
+          "removed": {
+            "precision": 0.3333333333333333,
+            "recall": 0.5,
+            "f1": 0.4,
+            "tp": 1,
+            "fp": 2,
+            "fn": 1
+          },
+          "added": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 1,
+            "fp": 0,
+            "fn": 0
+          },
+          "changed": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          }
+        },
+        "predicted_counts": {
+          "removed": 3,
+          "added": 1,
+          "changed": 0
+        },
+        "ground_truth_counts": {
+          "removed": 2,
+          "added": 1,
+          "changed": 0
+        }
+      },
+      {
+        "case_id": "data8",
+        "metrics": {
+          "removed": {
+            "precision": 0.3333333333333333,
+            "recall": 0.5,
+            "f1": 0.4,
+            "tp": 1,
+            "fp": 2,
+            "fn": 1
+          },
+          "added": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          },
+          "changed": {
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5,
+            "tp": 1,
+            "fp": 1,
+            "fn": 1
+          }
+        },
+        "predicted_counts": {
+          "removed": 3,
+          "added": 0,
+          "changed": 2
+        },
+        "ground_truth_counts": {
+          "removed": 2,
+          "added": 0,
+          "changed": 2
+        }
+      },
+      {
+        "case_id": "data9",
+        "metrics": {
+          "removed": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 5,
+            "fn": 2
+          },
+          "added": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 1,
+            "fp": 0,
+            "fn": 0
+          },
+          "changed": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          }
+        },
+        "predicted_counts": {
+          "removed": 5,
+          "added": 1,
+          "changed": 0
+        },
+        "ground_truth_counts": {
+          "removed": 2,
+          "added": 1,
+          "changed": 0
+        }
+      },
+      {
+        "case_id": "data10",
+        "metrics": {
+          "removed": {
+            "precision": 0.3333333333333333,
+            "recall": 0.5,
+            "f1": 0.4,
+            "tp": 1,
+            "fp": 2,
+            "fn": 1
+          },
+          "added": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 1,
+            "fn": 2
+          },
+          "changed": {
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5,
+            "tp": 1,
+            "fp": 1,
+            "fn": 1
+          }
+        },
+        "predicted_counts": {
+          "removed": 3,
+          "added": 1,
+          "changed": 2
+        },
+        "ground_truth_counts": {
+          "removed": 2,
+          "added": 2,
+          "changed": 2
+        }
+      }
+    ]
+  },
+  "baseline": {
+    "comparison_metrics": {
+      "removed": {
+        "precision": 0.6842105263157895,
+        "recall": 0.65,
+        "f1": 0.6666666666666667,
+        "tp": 13,
+        "fp": 6,
+        "fn": 7
+      },
+      "added": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "f1": 0.6666666666666666,
+        "tp": 10,
+        "fp": 5,
+        "fn": 5
+      },
+      "changed": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "f1": 0.6666666666666666,
+        "tp": 10,
+        "fp": 5,
+        "fn": 5
+      },
+      "overall": {
+        "precision": 0.673469387755102,
+        "recall": 0.66,
+        "f1": 0.6666666666666666,
+        "tp": 33,
+        "fp": 16,
+        "fn": 17
+      },
+      "num_cases": 10
+    },
+    "per_case": [
+      {
+        "case_id": "data1",
+        "metrics": {
+          "removed": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 2,
+            "fn": 2
+          },
+          "added": {
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5,
+            "tp": 1,
+            "fp": 1,
+            "fn": 1
+          },
+          "changed": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 2,
+            "fn": 2
+          }
+        },
+        "predicted_counts": {
+          "removed": 2,
+          "added": 2,
+          "changed": 2
+        },
+        "ground_truth_counts": {
+          "removed": 2,
+          "added": 2,
+          "changed": 2
+        }
+      },
+      {
+        "case_id": "data2",
+        "metrics": {
+          "removed": {
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5,
+            "tp": 1,
+            "fp": 1,
+            "fn": 1
+          },
+          "added": {
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5,
+            "tp": 1,
+            "fp": 1,
+            "fn": 1
+          },
+          "changed": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          }
+        },
+        "predicted_counts": {
+          "removed": 2,
+          "added": 2,
+          "changed": 2
+        },
+        "ground_truth_counts": {
+          "removed": 2,
+          "added": 2,
+          "changed": 2
+        }
+      },
+      {
+        "case_id": "data3",
+        "metrics": {
+          "removed": {
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5,
+            "tp": 1,
+            "fp": 1,
+            "fn": 1
+          },
+          "added": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "changed": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          }
+        },
+        "predicted_counts": {
+          "removed": 2,
+          "added": 2,
+          "changed": 2
+        },
+        "ground_truth_counts": {
+          "removed": 2,
+          "added": 2,
+          "changed": 2
+        }
+      },
+      {
+        "case_id": "data4",
+        "metrics": {
+          "removed": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "tp": 1,
+            "fp": 0,
+            "fn": 1
+          },
+          "added": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "changed": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          }
+        },
+        "predicted_counts": {
+          "removed": 1,
+          "added": 2,
+          "changed": 2
+        },
+        "ground_truth_counts": {
+          "removed": 2,
+          "added": 2,
+          "changed": 2
+        }
+      },
+      {
+        "case_id": "data5",
+        "metrics": {
+          "removed": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "added": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 1,
+            "fn": 1
+          },
+          "changed": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 2,
+            "fn": 2
+          }
+        },
+        "predicted_counts": {
+          "removed": 2,
+          "added": 1,
+          "changed": 2
+        },
+        "ground_truth_counts": {
+          "removed": 2,
+          "added": 1,
+          "changed": 2
+        }
+      },
+      {
+        "case_id": "data6",
+        "metrics": {
+          "removed": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 2,
+            "fn": 2
+          },
+          "added": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 2,
+            "fn": 2
+          },
+          "changed": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 1,
+            "fn": 1
+          }
+        },
+        "predicted_counts": {
+          "removed": 2,
+          "added": 2,
+          "changed": 1
+        },
+        "ground_truth_counts": {
+          "removed": 2,
+          "added": 2,
+          "changed": 1
+        }
+      },
+      {
+        "case_id": "data7",
+        "metrics": {
+          "removed": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "added": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 1,
+            "fp": 0,
+            "fn": 0
+          },
+          "changed": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          }
+        },
+        "predicted_counts": {
+          "removed": 2,
+          "added": 1,
+          "changed": 0
+        },
+        "ground_truth_counts": {
+          "removed": 2,
+          "added": 1,
+          "changed": 0
+        }
+      },
+      {
+        "case_id": "data8",
+        "metrics": {
+          "removed": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "added": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          },
+          "changed": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          }
+        },
+        "predicted_counts": {
+          "removed": 2,
+          "added": 0,
+          "changed": 2
+        },
+        "ground_truth_counts": {
+          "removed": 2,
+          "added": 0,
+          "changed": 2
+        }
+      },
+      {
+        "case_id": "data9",
+        "metrics": {
+          "removed": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "added": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 1,
+            "fp": 0,
+            "fn": 0
+          },
+          "changed": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0
+          }
+        },
+        "predicted_counts": {
+          "removed": 2,
+          "added": 1,
+          "changed": 0
+        },
+        "ground_truth_counts": {
+          "removed": 2,
+          "added": 1,
+          "changed": 0
+        }
+      },
+      {
+        "case_id": "data10",
+        "metrics": {
+          "removed": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "added": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "changed": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          }
+        },
+        "predicted_counts": {
+          "removed": 2,
+          "added": 2,
+          "changed": 2
+        },
+        "ground_truth_counts": {
+          "removed": 2,
+          "added": 2,
+          "changed": 2
+        }
+      }
+    ]
+  }
+}

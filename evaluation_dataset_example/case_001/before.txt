@@ -1,0 +1,11 @@
+Title: Login Validation
+Description:
+The current behavior only checks if username is empty.
+Password length is not validated.
+
+Current Rules:
+1) username must not be empty
+2) password can be any length
+
+Expected issue:
+Weak passwords are accepted.

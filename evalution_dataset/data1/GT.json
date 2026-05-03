@@ -1,0 +1,44 @@
+{
+  "case_id": "data1",
+  "schema_version": "1.0",
+  "task": "legal_change_detection",
+  "labels": {
+    "removed": [
+      {
+        "id": "R1",
+        "text": "Cam kết chất lượng sản phẩm sản xuất theo công nghệ nhận chuyển nhượng không thấp hơn chất lượng sản phẩm do bên chuyển giao sản xuất. Phương pháp đánh giá chất lượng do hai bên thoả thuận."
+      },
+      {
+        "id": "R2",
+        "text": "Cam kết là chủ sở hữu hợp pháp của công nghệ chuyển giao và việc chuyển giao công nghệ sẽ không xâm phạm quyền sở hữu công nghiệp của bất kỳ bên thứ 3 nào khác. Bên chuyển giao có trách nhiệm, với chi phí của mình, giải quyết mọi tranh chấp phát sinh từ việc chuyển giao công nghệ theo hợp đồng này."
+      }
+    ],
+    "added": [
+      {
+        "id": "A1",
+        "text": "3. Cả 2 bên đều phải tuân thủ những điều trên"
+      },
+      {
+        "id": "A2",
+        "text": "456123"
+      }
+    ],
+    "changed": [
+      {
+        "id": "C1",
+        "before": "Bên A có trách nhiệm bảo hành chất lượng của công nghệ cho bên nhận chuyển giao trong thời gian là tháng.",
+        "after": "Bên A không có trách nhiệm bảo hành chất lượng của công nghệ cho bên nhận chuyển giao trong thời gian là tháng."
+      },
+      {
+        "id": "C2",
+        "before": "Ghi chú xuất xứ công nghệ chuyển giao trên sản phẩm.",
+        "after": "Không cần ghi chú xuất xứ công nghệ chuyển giao trên sản phẩm."
+      }
+    ]
+  },
+  "stats": {
+    "removed_count": 2,
+    "added_count": 2,
+    "changed_count": 2
+  }
+}

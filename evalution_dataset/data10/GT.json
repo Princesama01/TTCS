@@ -1,0 +1,44 @@
+{
+  "case_id": "data10",
+  "schema_version": "1.0",
+  "task": "legal_change_detection",
+  "labels": {
+    "removed": [
+      {
+        "id": "R1",
+        "text": "a) Cung cấp nguyên vật liệu theo đúng số lượng, chất lượng, thời hạn và địa điểm cho bên B, trừ trường hợp có thoả thuận khác; cung cấp các giấy tờ cần thiết liên quan đến việc gia công;"
+      },
+      {
+        "id": "R2",
+        "text": "f) Các quyền khác theo quy định tại Hợp đồng này và theo quy đinh pháp luật."
+      }
+    ],
+    "added": [
+      {
+        "id": "A1",
+        "text": "e) Tố giác tội phạm."
+      },
+      {
+        "id": "A2",
+        "text": "g) Cả 2 bên đều phải đi ngủ."
+      }
+    ],
+    "changed": [
+      {
+        "id": "C1",
+        "before": "c) Trách nhiệm bảo quản: Bên B chịu mọi trách nhiệm về số lượng, chất lượng các nguyên liệu do bên A cung ứng và phải sử dụng đúng loại nguyên liệu đã giao vào sản xuất sản phẩm.",
+        "after": "c) Trách đi quản: Bên B chịu mọi trách nhiệm về số lượng, chất lượng các nguyên liệu do bên A cung ứng và phải sử dụng đúng loại nguyên liệu đã giao vào sản xuất sản phẩm."
+      },
+      {
+        "id": "C2",
+        "before": "Trong quá trình sản xuất bên A có quyền kiểm tra và yêu cầu bên B sản xuất theo đúng mẫu sản phẩm đã thỏa thuận bắt đầu từ ngày đưa nguyên liệu vào sản xuất (nếu cần).",
+        "after": "Trong quá trình sản xuất bên A không có quyền kiểm tra và yêu cầu bên B sản xuất theo đúng mẫu sản phẩm đã thỏa thuận bắt đầu từ ngày đưa nguyên liệu vào sản xuất (nếu cần)."
+      }
+    ]
+  },
+  "stats": {
+    "removed_count": 2,
+    "added_count": 2,
+    "changed_count": 2
+  }
+}

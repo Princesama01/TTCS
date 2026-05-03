@@ -1,0 +1,39 @@
+{
+  "case_id": "data6",
+  "schema_version": "1.0",
+  "task": "legal_change_detection",
+  "labels": {
+    "removed": [
+      {
+        "id": "R1",
+        "text": "a. Bên B thi công để hoàn thiện toàn bộ Công Trình theo thiết kế và Chi tiết hạng mục và vật tư theo dự toán thi công nêu tại Phụ lục."
+      },
+      {
+        "id": "R2",
+        "text": "a. Loại Công Trình: ………."
+      }
+    ],
+    "added": [
+      {
+        "id": "A1",
+        "text": "2.8. Các bên phải nạp tiền"
+      },
+      {
+        "id": "A2",
+        "text": "2.9. Các bên phải hợp tác dài hạn."
+      }
+    ],
+    "changed": [
+      {
+        "id": "C1",
+        "before": "3.3. Các trường hợp trễ hạn thực hiện Hợp Đồng không thuộc các trường hợp được liệt kê tại Mục 3.2 nêu trên sẽ bị xem là vi phạm Hợp Đồng và Bên B phải trả cho Bên A khoản tiền tính bằng 0.05% Giá Trị Hợp Đồng tính trên mỗi ngày chậm tiến độ theo bản Tiến Độ Thi Công đã được duyệt.",
+        "after": "3.3. Các trường hợp trễ hạn thực hiện Hợp Đồng không thuộc các trường hợp được liệt kê tại Mục 3.2 nêu trên sẽ bị xem là vi phạm Hợp Đồng và Bên B phải trả cho Bên A khoản tiền tính bằng 100% Giá Trị Hợp Đồng tính trên mỗi ngày chậm tiến độ theo bản Tiến Độ Thi Công đã được duyệt."
+      }
+    ]
+  },
+  "stats": {
+    "removed_count": 2,
+    "added_count": 2,
+    "changed_count": 1
+  }
+}
